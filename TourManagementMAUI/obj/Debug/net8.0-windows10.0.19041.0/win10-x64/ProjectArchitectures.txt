@@ -1,0 +1,1 @@
+D:\QuanLyTourDuLich\TourManagementMAUI\TourManagementMAUI\TourManagementMAUI.csproj;x64

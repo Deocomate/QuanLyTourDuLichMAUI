@@ -1,0 +1,29 @@
+﻿@page "/weather"
+
+<h1>Danh sach dai ly</h1>
+
+<p>Danh sach cac dai ly.</p>
+
+<table>
+    <tbody>
+        @foreach(var item in list)
+        {
+            <tr>
+                <td>@item.DaiLyID</td>
+                <td>@item.TenDaiLy</td>
+                <td>@item.SoDienThoai</td>
+                <td>@item.Email</td>
+                <td>@item.DiaChi</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@code {
+    public List<DaiLy> list;
+    public DaiLy d;
+
+    protected override async Task OnInitializedAsync()
+    {
+        list = DaiLyDAO.List();
+    }
+}

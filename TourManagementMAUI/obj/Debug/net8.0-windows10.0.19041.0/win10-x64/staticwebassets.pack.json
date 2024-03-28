@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
+      "PackagePath": "staticwebassets\\TourManagementMAUI.styles.css"
+    },
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.TourManagementMAUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.TourManagementMAUI.props",
+      "PackagePath": "build\\TourManagementMAUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.TourManagementMAUI.props",
+      "PackagePath": "buildMultiTargeting\\TourManagementMAUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.TourManagementMAUI.props",
+      "PackagePath": "buildTransitive\\TourManagementMAUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
