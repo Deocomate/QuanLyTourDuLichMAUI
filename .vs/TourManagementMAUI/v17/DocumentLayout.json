@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|d:\\quanlytourdulich\\tourmanagementmaui\\tourmanagementmaui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|d:\\quanlytourdulich\\tourmanagementmaui\\tourmanagementmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\Weather.razor",
+              "ToolTip": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-28T17:20:01.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Counter.razor",
               "DocumentMoniker": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\Counter.razor",
@@ -34,25 +51,24 @@
               "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\Counter.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-28T16:58:52.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T16:58:52.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\Home.razor",
               "ToolTip": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-28T16:58:51.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DAO.cs",
               "DocumentMoniker": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Model\\DAO.cs",
               "RelativeDocumentMoniker": "TourManagementMAUI\\Model\\DAO.cs",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "TourManagementMAUI\\Model\\DAO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T09:45:53.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T09:45:53.085Z"
             }
           ]
         }
