@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\QuanLyTourDuLich\TourManagementMAUI\TourManagementMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-28T17:20:13.187</Modified>
+      <Modified>2024-03-28T17:21:58.881</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\QuanLyTourDuLich\TourManagementMAUI\TourManagementMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TourManagementMAUI.dll">
       <PackagePath>TourManagementMAUI.dll</PackagePath>
-      <Modified>2024-03-28T17:20:12.345</Modified>
+      <Modified>2024-03-28T17:21:58.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\QuanLyTourDuLich\TourManagementMAUI\TourManagementMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TourManagementMAUI.exe</PackagePath>
-      <Modified>2024-03-28T17:20:12.382</Modified>
+      <Modified>2024-03-28T17:21:58.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\QuanLyTourDuLich\TourManagementMAUI\TourManagementMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
