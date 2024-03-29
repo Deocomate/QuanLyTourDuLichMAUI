@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
       "PackagePath": "staticwebassets\\TourManagementMAUI.styles.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\index.html",
+      "Id": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
