@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TourManagementMAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7d89194f325c0a7a32287a638b1aa3229dd51d76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ac59b1ef2da217670c614a09a558e6cc80a35a49")]
 [assembly: System.Reflection.AssemblyProductAttribute("TourManagementMAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TourManagementMAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

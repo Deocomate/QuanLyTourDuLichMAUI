@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ebrpzam1bnCc0CO+QlqPKazcYDGA7OcHPipNUYdJJDQ=",
+  "Hash": "M7Vh3S5FHDFllx7GoaA9AOq3oTK2UpC0omieRO8w5Pc=",
   "Source": "TourManagementMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "TourManagementMAUI\\wwwroot",
       "Source": "TourManagementMAUI",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "TourManagementMAUI.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css"
+      "OriginalItemSpec": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\TourManagementMAUI.bundle.scp.css",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\TourManagementMAUI.bundle.scp.css",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "TourManagementMAUI.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\TourManagementMAUI.bundle.scp.css"
+      "OriginalItemSpec": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\TourManagementMAUI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\index.html",
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\index.html",
       "SourceId": "TourManagementMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sktkt\\OneDrive\\Máy tính\\a\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",
