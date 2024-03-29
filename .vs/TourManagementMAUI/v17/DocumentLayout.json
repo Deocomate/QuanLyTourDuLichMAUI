@@ -38,8 +38,7 @@
               "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Edit.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-29T01:48:12.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T01:48:12.956Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\Counter.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-29T01:48:11.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T01:48:11.201Z"
             },
             {
               "$type": "Document",
@@ -60,9 +58,9 @@
               "Title": "Create.razor",
               "DocumentMoniker": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor",
               "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor",
-              "ToolTip": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor*",
-              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor*",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "ToolTip": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Create.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-29T01:44:25.927Z",
               "EditorCaption": ""
@@ -77,8 +75,7 @@
               "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Index.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-29T01:15:38.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T01:15:38.509Z"
             }
           ]
         }
