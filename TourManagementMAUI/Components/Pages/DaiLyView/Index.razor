@@ -59,6 +59,7 @@
     }
     public void Delete(int id)
     {
-
+        DaiLyDAO.Delete(id);
+        navigationManager.Refresh();
     }
 }
