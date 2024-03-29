@@ -1,7 +1,11 @@
-
+#Folder Ignore
 .vs/TourManagementMAUI/FileContentIndex/
-/.vs/TourManagementMAUI/FileContentIndex
-/TourManagementMAUI/obj
-/.vs/TourManagementMAUI/v17
-/TourManagementMAUI/bin
+/.vs/TourManagementMAUI/FileContentIndex/
+/TourManagementMAUI/obj/
+/.vs/TourManagementMAUI/v17/
+/TourManagementMAUI/bin/
+obj
+bin
+v17
+#File Ignore
 TourManagementMAUI/Model/DAO.cs
