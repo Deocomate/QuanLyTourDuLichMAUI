@@ -1,0 +1,14 @@
+﻿@page "/daily/edit/{id:int}";
+
+<h3>Chỉnh sử đại lý: @daiLy.TenDaiLy</h3>
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public DaiLy daiLy;
+
+    protected override async Task OnInitializedAsync()
+    {
+        daiLy = DaiLyDAO.Find(id);
+    }
+}

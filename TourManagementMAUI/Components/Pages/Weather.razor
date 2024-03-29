@@ -4,7 +4,18 @@
 
 <p>Danh sach cac dai ly.</p>
 
-<table>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên đại lý</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Địa chỉ</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
     <tbody>
         @foreach (var item in list)
         {
@@ -14,6 +25,8 @@
                 <td>@item.SoDienThoai</td>
                 <td>@item.Email</td>
                 <td>@item.DiaChi</td>
+                <td><a href="" class="btn btn-warning">Sửa</a></td>
+                <td><a href="" class="btn btn-danger">Xóa</a></td>
             </tr>
         }
     </tbody>
