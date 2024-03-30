@@ -9,3 +9,4 @@ bin
 v17
 #File Ignore
 TourManagementMAUI/Model/DAO.cs
+/TourManagementMAUI/bin/Debug
