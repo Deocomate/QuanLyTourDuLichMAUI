@@ -20,6 +20,7 @@ namespace TourManagementMAUI.Model
                 {
                     while (reader.Read())
                     {
+                        var DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID"));
                         var item = new Tour
                         {
                             TourID = reader.GetInt32(reader.GetOrdinal("TourID")),
@@ -32,7 +33,8 @@ namespace TourManagementMAUI.Model
                             MoTaTour = reader.GetString(reader.GetOrdinal("MoTaTour")),
                             GiaTourDaiLy = (float)reader.GetDouble(reader.GetOrdinal("GiaTourDaiLy")),
                             GiaTourBanLe = (float)reader.GetDouble(reader.GetOrdinal("GiaTourBanLe")),
-                            DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID"))
+                            DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID")),
+                            DaiLy = DaiLyDAO.Find(DaiLyID)
                         };
                         list.Add(item);
                     }
@@ -54,6 +56,7 @@ namespace TourManagementMAUI.Model
                     {
                         while (reader.Read())
                         {
+                            var DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID"));
                             item = new Tour
                             {
                                 TourID = reader.GetInt32(reader.GetOrdinal("TourID")),
@@ -66,7 +69,8 @@ namespace TourManagementMAUI.Model
                                 MoTaTour = reader.GetString(reader.GetOrdinal("MoTaTour")),
                                 GiaTourDaiLy = (float)reader.GetDouble(reader.GetOrdinal("GiaTourDaiLy")),
                                 GiaTourBanLe = (float)reader.GetDouble(reader.GetOrdinal("GiaTourBanLe")),
-                                DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID"))
+                                DaiLyID = reader.GetInt32(reader.GetOrdinal("DaiLyID")),
+                                DaiLy = DaiLyDAO.Find(DaiLyID)
                             };
                         }
                     }

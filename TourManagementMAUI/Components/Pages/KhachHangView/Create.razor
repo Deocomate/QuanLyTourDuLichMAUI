@@ -1,0 +1,58 @@
+﻿@page "/khachhang/create"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Thêm khách hàng mới</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Store">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Tên Khách Hàng</label>
+                            <input type="text" class="form-control" name="TenKhachHang" required @bind="@item.TenKhachHang">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Giới Tính</label>
+                            <input type="text" class="form-control" name="GioiTinh" required @bind="@item.GioiTinh">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tuổi</label>
+                            <input type="number" class="form-control" name="Tuoi" required @bind="@item.Tuoi">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Số Điện Thoại</label>
+                            <input type="text" class="form-control" name="SoDienThoai" required @bind="@item.SoDienThoai">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" name="Email" required @bind="@item.Email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Địa Chỉ</label>
+                            <input type="text" class="form-control" name="DiaChi" required @bind="@item.DiaChi">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Thêm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    KhachHang item = new KhachHang()
+    {
+
+    };
+    public void Store()
+    {
+        KhachHangDAO.Create(item);
+        NavigationManager.NavigateTo("/khachhang/index");
+    }
+}

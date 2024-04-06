@@ -12,7 +12,9 @@ namespace TourManagementMAUI.Model
         public DateTime NgayBatDau { get; set; }
         public string TrangThaiTour { get; set; }
         public int TourID { get; set; }
+        public Tour Tour { get; set; }
         public int HuongDanVienID { get; set; }
+        public HuongDanVien HuongDanVien { get; set; }
     }
 
 }

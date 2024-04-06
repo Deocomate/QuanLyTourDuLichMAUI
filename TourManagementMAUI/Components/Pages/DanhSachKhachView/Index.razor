@@ -1,0 +1,57 @@
+﻿@page "/danhsachkhach/{id:int}"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách khách của tour: @item.Tour.TenTour - @item.NgayBatDau</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên khách hàng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var customer in customers)
+                        {
+                            <tr>
+                                <td>@customer.KhachHangID</td>
+                                <td>@customer.TenKhachHang</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public TourDangChay item = new TourDangChay();
+
+    public List<VeTour> list = new List<VeTour>();
+
+    public List<KhachHang> customers = new List<KhachHang>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        item = TourDangChayDAO.Find(id);
+        list = VeTourDAO.List();
+        foreach (var vetour in list)
+        {
+            if (item.TourDangChayID == vetour.TourDangChayID)
+            {
+                customers.Add(vetour.KhachHang);
+            }
+        }
+    }
+
+}

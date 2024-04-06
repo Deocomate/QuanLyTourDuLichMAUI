@@ -1,0 +1,69 @@
+﻿@page "/tourdangchay/index"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách tour đang chạy</h3>
+                    <button @onclick="Create" class="btn btn-success">Thêm tour đang chạy mới</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên tour</th>
+                            <th>Ngày bắt đầu</th>
+                            <th>Trạng thái tour</th>
+                            <th>Hướng dẫn viên</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in list)
+                        {
+                            <tr>
+                                <td>@item.TourDangChayID</td>
+                                <td>@item.Tour.TenTour</td>
+                                <td>@item.NgayBatDau</td>
+                                <td>@item.TrangThaiTour</td>
+                                <td>@item.HuongDanVien.TenHuongDanVien</td>
+                                <td><a href="danhsachkhach/@item.TourDangChayID">Danh sách khách</a></td>
+                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.TourDangChayID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.TourDangChayID))>Xóa</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<TourDangChay> list;
+    protected override async Task OnInitializedAsync()
+    {
+        list = TourDangChayDAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong TourDangChayDAO
+    }
+
+    public void Create()
+    {
+        NavigationManager.NavigateTo("/tourdangchay/create");
+    }
+    public void Edit(int id)
+    {
+        NavigationManager.NavigateTo($"/tourdangchay/edit/{id}");
+    }
+    public void Delete(int id)
+    {
+        TourDangChayDAO.Delete(id);
+        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
+        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
+        OnInitializedAsync();
+    }
+}

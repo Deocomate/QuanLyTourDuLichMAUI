@@ -1,0 +1,69 @@
+﻿@page "/huongdanvien/edit/{id:int}"
+@inject NavigationManager NavigationManager
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Sửa thông tin: @item.TenHuongDanVien</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Update">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Tên hướng dẫn viên</label>
+                            <input type="text" class="form-control" name="TenHuongDanVien" required @bind="@item.TenHuongDanVien">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Giới tính</label>
+                            <input type="text" class="form-control" name="GioiTinh" required @bind="@item.GioiTinh">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Ngày sinh</label>
+                            <input type="date" class="form-control" name="NgaySinh" required @bind="@item.NgaySinh">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="text" class="form-control" name="SoDienThoai" required @bind="@item.SoDienThoai">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="Email" required @bind="@item.Email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Địa chỉ</label>
+                            <input type="text" class="form-control" name="DiaChi" required @bind="@item.DiaChi">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" name="MatKhau" required @bind="@item.MatKhau">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    HuongDanVien item = new HuongDanVien();
+
+    protected override async Task OnInitializedAsync()
+    {
+        item = HuongDanVienDAO.Find(id); // Đảm bảo HuongDanVienDAO có phương thức Find
+    }
+
+    public void Update()
+    {
+        HuongDanVienDAO.Update(id, item); // Đảm bảo HuongDanVienDAO có phương thức Update
+        NavigationManager.NavigateTo("/huongdanvien/index");
+    }
+}

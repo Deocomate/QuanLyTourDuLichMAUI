@@ -20,12 +20,14 @@ namespace TourManagementMAUI.Model
                 {
                     while (reader.Read())
                     {
+                        var NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"));
                         var item = new Admin_
                         {
                             AdminID = reader.GetInt32(reader.GetOrdinal("AdminID")),
                             TenDangNhap = reader.GetString(reader.GetOrdinal("TenDangNhap")),
                             MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
-                            NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"))
+                            NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID")),
+                            NhanVien = NhanVienDAO.Find(NhanVienID),
                         };
                         list.Add(item);
                     }
@@ -47,12 +49,14 @@ namespace TourManagementMAUI.Model
                     {
                         while (reader.Read())
                         {
+                            var NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"));
                             item = new Admin_
                             {
                                 AdminID = reader.GetInt32(reader.GetOrdinal("AdminID")),
                                 TenDangNhap = reader.GetString(reader.GetOrdinal("TenDangNhap")),
                                 MatKhau = reader.GetString(reader.GetOrdinal("MatKhau")),
-                                NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"))
+                                NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID")),
+                                NhanVien = NhanVienDAO.Find(NhanVienID),
                             };
                         }
                     }

@@ -1,0 +1,58 @@
+﻿@page "/admin/edit/{id:int}"
+@inject NavigationManager NavigationManager
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Sửa thông tin: @item.TenDangNhap</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Update">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Tên đăng nhập</label>
+                            <input type="text" class="form-control" name="TenDangNhap" required @bind="@item.TenDangNhap">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" name="MatKhau" required @bind="@item.MatKhau">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nhân viên</label>
+                            <select class="form-select" name="NhanVienID" @bind="@item.NhanVienID" required>
+                                @foreach (var nhanvien in NhanVienDAO.List())
+                                {
+                                    <option value="@nhanvien.NhanVienID">@nhanvien.TenNhanVien</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    Admin_ item = new Admin_();
+
+    protected override async Task OnInitializedAsync()
+    {
+        item = Admin_DAO.Find(id); // Đảm bảo AdminDAO có phương thức Find
+    }
+
+    public void Update()
+    {
+        Admin_DAO.Update(id, item); // Đảm bảo AdminDAO có phương thức Update
+        NavigationManager.NavigateTo("/admin/index");
+    }
+}

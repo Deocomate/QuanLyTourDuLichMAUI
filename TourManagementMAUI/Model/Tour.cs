@@ -19,5 +19,7 @@ namespace TourManagementMAUI.Model
         public float GiaTourDaiLy { get; set; }
         public float GiaTourBanLe { get; set; }
         public int DaiLyID { get; set; }
+
+        public DaiLy DaiLy;
     }
 }

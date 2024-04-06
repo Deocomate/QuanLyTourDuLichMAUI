@@ -1,0 +1,60 @@
+﻿@page "/tourdangchay/create"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Thêm tour đang chạy mới</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Store">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Ngày bắt đầu</label>
+                            <input type="date" class="form-control" name="NgayBatDau" required @bind="@item.NgayBatDau">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Trạng thái tour</label>
+                            <input type="text" class="form-control" name="TrangThaiTour" required @bind="@item.TrangThaiTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tên tour</label>
+                            <select class="form-select" name="TourID" @bind="@item.TourID" required>
+                                @foreach (var tour in TourDAO.List())
+                                {
+                                    <option value="@tour.TourID">@tour.TenTour</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hướng dẫn viên</label>
+                            <select class="form-select" name="HuongDanVienID" @bind="@item.HuongDanVienID" required>
+                                @foreach (var hdv in HuongDanVienDAO.List())
+                                {
+                                    <option value="@hdv.HuongDanVienID">@hdv.TenHuongDanVien</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Thêm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    TourDangChay item = new TourDangChay()
+        {
+            NgayBatDau = DateTime.Today
+    };
+    public void Store()
+    {
+        TourDangChayDAO.Create(item);
+        NavigationManager.NavigateTo("/tourdangchay/index");
+    }
+}

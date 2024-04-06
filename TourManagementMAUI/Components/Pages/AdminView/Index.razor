@@ -1,0 +1,65 @@
+﻿@page "/admin/index"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách Admin</h3>
+                    <button @onclick="Create" class="btn btn-success">Thêm Admin mới</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Mật khẩu</th>
+                            <th>Nhân viên</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in list)
+                        {
+                            <tr>
+                                <td>@item.AdminID</td>
+                                <td>@item.TenDangNhap</td>
+                                <td>@item.MatKhau</td>
+                                <td>@item.NhanVien.TenNhanVien</td>
+                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.AdminID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.AdminID))>Xóa</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<Admin_> list;
+    protected override async Task OnInitializedAsync()
+    {
+        list = Admin_DAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong AdminDAO
+    }
+
+    public void Create()
+    {
+        NavigationManager.NavigateTo("/admin/create");
+    }
+    public void Edit(int id)
+    {
+        NavigationManager.NavigateTo($"/admin/edit/{id}");
+    }
+    public void Delete(int id)
+    {
+        Admin_DAO.Delete(id);
+        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
+        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
+        OnInitializedAsync();
+    }
+}

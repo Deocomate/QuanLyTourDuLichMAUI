@@ -14,7 +14,10 @@ namespace TourManagementMAUI.Model
         public float TongTien { get; set; }
         public string TrangThai { get; set; }
         public int TourDangChayID { get; set; }
+        public TourDangChay TourDangChay { get; set; }
         public int KhachHangID { get; set; }
+        public KhachHang KhachHang { get; set; }
         public int NhanVienID { get; set; }
+        public NhanVien NhanVien { get; set; }
     }
 }

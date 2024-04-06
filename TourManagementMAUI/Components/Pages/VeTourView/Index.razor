@@ -1,0 +1,73 @@
+﻿@page "/vetour/index"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách vé tour</h3>
+                    <button @onclick="Create" class="btn btn-success">Thêm vé tour mới</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ngày đặt tour</th>
+                            <th>Số lượng khách</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Tên tour đang chạy</th>
+                            <th>Tên khách hàng</th>
+                            <th>Tên nhân viên</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in list)
+                        {
+                            <tr>
+                                <td>@item.VeTourID</td>
+                                <td>@item.NgayDatTour</td>
+                                <td>@item.SoLuongKhach</td>
+                                <td>@item.TongTien</td>
+                                <td>@item.TrangThai</td>
+                                <td>@item.TourDangChay.Tour.TenTour</td>
+                                <td>@item.KhachHang.TenKhachHang</td>
+                                <td>@item.NhanVien.TenNhanVien</td>
+                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.VeTourID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.VeTourID))>Xóa</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<VeTour> list;
+    protected override async Task OnInitializedAsync()
+    {
+        list = VeTourDAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong VeTourDAO
+    }
+
+    public void Create()
+    {
+        NavigationManager.NavigateTo("/vetour/create");
+    }
+    public void Edit(int id)
+    {
+        NavigationManager.NavigateTo($"/vetour/edit/{id}");
+    }
+    public void Delete(int id)
+    {
+        VeTourDAO.Delete(id);
+        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
+        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
+        OnInitializedAsync();
+    }
+}

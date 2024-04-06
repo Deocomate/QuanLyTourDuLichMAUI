@@ -1,0 +1,69 @@
+﻿@page "/khachhang/index"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách khách hàng</h3>
+                    <button @onclick="Create" class="btn btn-success">Thêm khách hàng mới</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên khách hàng</th>
+                            <th>Giới tính</th>
+                            <th>Tuổi</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in list)
+                        {
+                            <tr>
+                                <td>@item.KhachHangID</td>
+                                <td>@item.TenKhachHang</td>
+                                <td>@item.GioiTinh</td>
+                                <td>@item.Tuoi</td>
+                                <td>@item.SoDienThoai</td>
+                                <td>@item.Email</td>
+                                <td>@item.DiaChi</td>
+                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.KhachHangID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.KhachHangID))>Xóa</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<KhachHang> list;
+    protected override async Task OnInitializedAsync()
+    {
+        list = KhachHangDAO.List();
+    }
+
+    public void Create()
+    {
+        NavigationManager.NavigateTo("/khachhang/create");
+    }
+    public void Edit(int id)
+    {
+        NavigationManager.NavigateTo($"/khachhang/edit/{id}");
+    }
+    public void Delete(int id)
+    {
+        KhachHangDAO.Delete(id);
+        OnInitializedAsync();
+    }
+}

@@ -10,6 +10,8 @@ namespace TourManagementMAUI.Model
     {
         public int DanhSachKhachTourDangChayID { get; set; }
         public int TourDangChayID { get; set; }
+        public TourDangChay TourDangChay { get; set; }
         public int KhachHangID { get; set; }
+        public KhachHang KhachHang { get; set; }
     }
 }

@@ -20,6 +20,9 @@ namespace TourManagementMAUI.Model
                 {
                     while (reader.Read())
                     {
+                        var TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID"));
+                        var KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"));
+                        var NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"));
                         var item = new VeTour
                         {
                             VeTourID = reader.GetInt32(reader.GetOrdinal("VeTourID")),
@@ -29,7 +32,10 @@ namespace TourManagementMAUI.Model
                             TrangThai = reader.GetString(reader.GetOrdinal("TrangThai")),
                             TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
                             KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID")),
-                            NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"))
+                            NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID")),
+                            TourDangChay = TourDangChayDAO.Find(TourDangChayID),
+                            KhachHang = KhachHangDAO.Find(KhachHangID),
+                            NhanVien = NhanVienDAO.Find(NhanVienID),
                         };
                         list.Add(item);
                     }
@@ -51,6 +57,9 @@ namespace TourManagementMAUI.Model
                     {
                         while (reader.Read())
                         {
+                            var TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID"));
+                            var KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"));
+                            var NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"));
                             item = new VeTour
                             {
                                 VeTourID = reader.GetInt32(reader.GetOrdinal("VeTourID")),
@@ -60,7 +69,10 @@ namespace TourManagementMAUI.Model
                                 TrangThai = reader.GetString(reader.GetOrdinal("TrangThai")),
                                 TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
                                 KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID")),
-                                NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID"))
+                                NhanVienID = reader.GetInt32(reader.GetOrdinal("NhanVienID")),
+                                TourDangChay = TourDangChayDAO.Find(TourDangChayID),
+                                KhachHang = KhachHangDAO.Find(KhachHangID),
+                                NhanVien = NhanVienDAO.Find(NhanVienID),
                             };
                         }
                     }

@@ -20,11 +20,15 @@ namespace TourManagementMAUI.Model
                 {
                     while (reader.Read())
                     {
+                        var TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID"));
+                        var KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"));
                         var item = new DanhSachKhachTourDangChay
                         {
                             DanhSachKhachTourDangChayID = reader.GetInt32(reader.GetOrdinal("DanhSachKhachTourDangChayID")),
                             TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
-                            KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"))
+                            KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID")),
+                            TourDangChay = TourDangChayDAO.Find(TourDangChayID),
+                            KhachHang = KhachHangDAO.Find(KhachHangID),
                         };
                         list.Add(item);
                     }
@@ -46,11 +50,15 @@ namespace TourManagementMAUI.Model
                     {
                         while (reader.Read())
                         {
+                            var TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID"));
+                            var KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"));
                             item = new DanhSachKhachTourDangChay
                             {
                                 DanhSachKhachTourDangChayID = reader.GetInt32(reader.GetOrdinal("DanhSachKhachTourDangChayID")),
                                 TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
-                                KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID"))
+                                KhachHangID = reader.GetInt32(reader.GetOrdinal("KhachHangID")),
+                                TourDangChay = TourDangChayDAO.Find(TourDangChayID),
+                                KhachHang = KhachHangDAO.Find(KhachHangID),
                             };
                         }
                     }

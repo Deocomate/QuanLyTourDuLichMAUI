@@ -1,0 +1,84 @@
+﻿@page "/vetour/edit/{id:int}"
+@inject NavigationManager NavigationManager
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Sửa thông tin vé tour: @item.VeTourID</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Update">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Ngày đặt tour</label>
+                            <input type="date" class="form-control" name="NgayDatTour" required @bind="@item.NgayDatTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Số lượng khách</label>
+                            <input type="number" class="form-control" name="SoLuongKhach" required @bind="@item.SoLuongKhach">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tổng tiền</label>
+                            <input type="number" step="0.01" class="form-control" name="TongTien" required @bind="@item.TongTien">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Trạng thái</label>
+                            <input type="text" class="form-control" name="TrangThai" required @bind="@item.TrangThai">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tour đang chạy</label>
+                            <select class="form-select" name="TourDangChayID" @bind="@item.TourDangChayID" required>
+                                @foreach (var tour in TourDangChayDAO.List())
+                                {
+                                    <option value="@tour.TourDangChayID">@tour.Tour.TenTour - @tour.NgayBatDau.ToString()</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Khách hàng</label>
+                            <select class="form-select" name="KhachHangID" @bind="@item.KhachHangID" required>
+                                @foreach (var khachhang in KhachHangDAO.List())
+                                {
+                                    <option value="@khachhang.KhachHangID">@khachhang.TenKhachHang</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nhân viên</label>
+                            <select class="form-select" name="NhanVienID" @bind="@item.NhanVienID" required>
+                                @foreach (var nhanvien in NhanVienDAO.List())
+                                {
+                                    <option value="@nhanvien.NhanVienID">@nhanvien.TenNhanVien</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    VeTour item = new VeTour();
+
+    protected override async Task OnInitializedAsync()
+    {
+        item = VeTourDAO.Find(id); // Đảm bảo VeTourDAO có phương thức Find
+    }
+
+    public void Update()
+    {
+        VeTourDAO.Update(id, item); // Đảm bảo VeTourDAO có phương thức Update
+        NavigationManager.NavigateTo("/vetour/index");
+    }
+}

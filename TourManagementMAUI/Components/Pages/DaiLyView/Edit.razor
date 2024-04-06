@@ -42,7 +42,7 @@
     [Parameter]
     public int id { get; set; }
 
-    public DaiLy item;
+    DaiLy item = new DaiLy();
 
     protected override async Task OnInitializedAsync()
     {

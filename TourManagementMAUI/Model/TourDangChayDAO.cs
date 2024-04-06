@@ -20,13 +20,17 @@ namespace TourManagementMAUI.Model
                 {
                     while (reader.Read())
                     {
+                        var TourID = reader.GetInt32(reader.GetOrdinal("TourID"));
+                        var HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID"));
                         var item = new TourDangChay
                         {
                             TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
                             NgayBatDau = reader.GetDateTime(reader.GetOrdinal("NgayBatDau")),
                             TrangThaiTour = reader.GetString(reader.GetOrdinal("TrangThaiTour")),
                             TourID = reader.GetInt32(reader.GetOrdinal("TourID")),
-                            HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID"))
+                            HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID")),
+                            Tour = TourDAO.Find(TourID),
+                            HuongDanVien = HuongDanVienDAO.Find(HuongDanVienID),
                         };
                         list.Add(item);
                     }
@@ -48,13 +52,17 @@ namespace TourManagementMAUI.Model
                     {
                         while (reader.Read())
                         {
+                            var TourID = reader.GetInt32(reader.GetOrdinal("TourID"));
+                            var HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID"));
                             item = new TourDangChay
                             {
                                 TourDangChayID = reader.GetInt32(reader.GetOrdinal("TourDangChayID")),
                                 NgayBatDau = reader.GetDateTime(reader.GetOrdinal("NgayBatDau")),
                                 TrangThaiTour = reader.GetString(reader.GetOrdinal("TrangThaiTour")),
                                 TourID = reader.GetInt32(reader.GetOrdinal("TourID")),
-                                HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID"))
+                                HuongDanVienID = reader.GetInt32(reader.GetOrdinal("HuongDanVienID")),
+                                Tour = TourDAO.Find(TourID),
+                                HuongDanVien = HuongDanVienDAO.Find(HuongDanVienID),
                             };
                         }
                     }

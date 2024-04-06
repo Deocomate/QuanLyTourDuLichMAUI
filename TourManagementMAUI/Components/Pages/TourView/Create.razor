@@ -1,0 +1,76 @@
+﻿@page "/tour/create"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Thêm tour mới</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Store">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Tên Tour</label>
+                            <input type="text" class="form-control" name="TenTour" required @bind="@item.TenTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Thời lượng tour</label>
+                            <input type="number" class="form-control" name="ThoiLuongTour" required @bind="@item.ThoiLuongTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phương tiện</label>
+                            <input type="text" class="form-control" name="PhuongTienTour" required @bind="@item.PhuongTienTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Địa điểm</label>
+                            <input type="text" class="form-control" name="DiaDiem" required @bind="@item.DiaDiem">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Lịch trình chi tiết</label>
+                            <textarea class="form-control" name="LichTrinhChiTiet" rows="3" required @bind="@item.LichTrinhChiTiet"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hình ảnh</label>
+                            <input type="text" class="form-control" name="HinhAnhTour" @bind="@item.HinhAnhTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mô tả tour</label>
+                            <textarea class="form-control" name="MoTaTour" rows="3" @bind="@item.MoTaTour"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Giá tour dành cho đại lý</label>
+                            <input type="number" step="0.01" class="form-control" name="GiaTourDaiLy" required @bind="@item.GiaTourDaiLy">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Giá tour bán lẻ</label>
+                            <input type="number" step="0.01" class="form-control" name="GiaTourBanLe" required @bind="@item.GiaTourBanLe">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tên đại lý</label>
+                            <select class="form-select" name="DaiLyID" @bind="@item.DaiLyID" required>
+                                @foreach(var daily in DaiLyDAO.List())
+                                {
+                                    <option value="@daily.DaiLyID">@daily.TenDaiLy</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Thêm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    Tour item = new Tour();
+    public void Store()
+    {
+        TourDAO.Create(item);
+        NavigationManager.NavigateTo("/tour/index");
+    }
+}

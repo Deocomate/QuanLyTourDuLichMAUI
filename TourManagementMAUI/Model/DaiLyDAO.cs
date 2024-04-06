@@ -114,5 +114,10 @@ namespace TourManagementMAUI.Model
             }
             return rowAffected;
         }
+
+        internal static DaiLy Find(object daiLyID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

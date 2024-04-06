@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M7Vh3S5FHDFllx7GoaA9AOq3oTK2UpC0omieRO8w5Pc=",
+  "Hash": "IcYEeavHRZHLZ24d8rUfr2En2fOq0rTzSzv7Px1YrhY=",
   "Source": "TourManagementMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\js\\main.js",
+      "SourceId": "TourManagementMAUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
     }
   ]
 }

@@ -1,0 +1,67 @@
+﻿@page "/tourdangchay/edit/{id:int}"
+@inject NavigationManager NavigationManager
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Sửa thông tin: @item.Tour.TenTour</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form @onsubmit="Update">
+                    <div class="form-container">
+                        <div class="mb-3">
+                            <label class="form-label">Ngày bắt đầu</label>
+                            <input type="date" class="form-control" name="NgayBatDau" required @bind="@item.NgayBatDau">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Trạng thái tour</label>
+                            <input type="text" class="form-control" name="TrangThaiTour" required @bind="@item.TrangThaiTour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tên tour</label>
+                            <select class="form-select" name="TourID" @bind="@item.TourID" required>
+                                @foreach (var tour in TourDAO.List())
+                                {
+                                    <option value="@tour.TourID">@tour.TenTour</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hướng dẫn viên</label>
+                            <select class="form-select" name="HuongDanVienID" @bind="@item.HuongDanVienID" required>
+                                @foreach (var hdv in HuongDanVienDAO.List())
+                                {
+                                    <option value="@hdv.HuongDanVienID">@hdv.TenHuongDanVien</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    TourDangChay item = new TourDangChay();
+
+    protected override async Task OnInitializedAsync()
+    {
+        item = TourDangChayDAO.Find(id); // Đảm bảo TourDangChayDAO có phương thức Find
+    }
+
+    public void Update()
+    {
+        TourDangChayDAO.Update(id, item); // Đảm bảo TourDangChayDAO có phương thức Update
+        NavigationManager.NavigateTo("/tourdangchay/index");
+    }
+}

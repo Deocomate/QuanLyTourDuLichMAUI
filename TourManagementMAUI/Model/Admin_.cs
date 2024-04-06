@@ -12,5 +12,6 @@ namespace TourManagementMAUI.Model
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
         public int NhanVienID { get; set; }
+        public NhanVien NhanVien { get; set; }
     }
 }

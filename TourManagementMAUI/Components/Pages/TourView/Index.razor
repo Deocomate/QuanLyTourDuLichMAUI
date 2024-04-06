@@ -1,0 +1,73 @@
+﻿@page "/tour/index"
+@inject NavigationManager NavigationManager
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h3 class="card-title mb-0">Danh sách tour</h3>
+                    <button @onclick="Create" class="btn btn-success">Thêm tour mới</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Đại lý của tour</th>
+                            <th>Tên tour</th>
+                            <th>Thời lượng</th>
+                            <th>Phương tiện</th>
+                            <th>Địa điểm</th>
+                            <th>Giá đại lý</th>
+                            <th>Giá bán lẻ</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in list)
+                        {
+                            <tr>
+                                <td>@item.TourID</td>
+                                <td>@item.DaiLy.TenDaiLy</td>
+                                <td>@item.TenTour</td>
+                                <td>@item.ThoiLuongTour</td>
+                                <td>@item.PhuongTienTour</td>
+                                <td>@item.DiaDiem</td>
+                                <td>@item.GiaTourDaiLy</td>
+                                <td>@item.GiaTourBanLe</td>
+                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.TourID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.TourID))>Xóa</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public List<Tour> list;
+    protected override async Task OnInitializedAsync()
+    {
+        list = TourDAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong TourDAO
+    }
+
+    public void Create()
+    {
+        NavigationManager.NavigateTo("/tour/create");
+    }
+    public void Edit(int id)
+    {
+        NavigationManager.NavigateTo($"/tour/edit/{id}");
+    }
+    public void Delete(int id)
+    {
+        TourDAO.Delete(id);
+        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
+        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
+        OnInitializedAsync();
+    }
+}
