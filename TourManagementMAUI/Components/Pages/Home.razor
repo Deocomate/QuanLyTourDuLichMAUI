@@ -1,48 +1,216 @@
 ﻿@page "/"
+@using System.Text.Json
+@inject IJSRuntime JSRuntime
 
 <h1>Quản lý tour du lịch</h1>
 
-<!-- Chèn biểu đồ chart js vào đây -->
 <div class="container">
-    <canvas id="myChart" style="width:100%;height:200px"></canvas>
+    <div class="row d-none">
+        <div class="col-12">
+            <h2>Dữ liệu JSON</h2>
+            <pre>@listVeTourJson</pre>
+            <pre>@listTourJson</pre>
+            <pre>@listTourDangChayJson</pre>
+            <pre>@listNhanVienJson</pre>
+            <pre>@listKhachHangJson</pre>
+            <pre>@listHuongDanVienJson</pre>
+
+            <input type="hidden" id="input_listVeTour" value="@listVeTourJson" />
+            <input type="hidden" id="input_listTour" value="@listTourJson" />
+            <input type="hidden" id="input_listTourDangChay" value="@listTourDangChayJson" />
+            <input type="hidden" id="input_listNhanVien" value="@listNhanVienJson" />
+            <input type="hidden" id="input_listKhachHang" value="@listKhachHangJson" />
+            <input type="hidden" id="input_listHuongDanVien" value="@listHuongDanVienJson" />
+
+        </div>
+    </div>
+    <div class="row g-5">
+        <div class="col-12">
+            <canvas id="chartVeTour" style="width:100%;height:200px;"></canvas>
+        </div>
+        <div class="col-12">
+            <canvas id="chartDoanhThu" style="width:100%;height:200px;"></canvas>
+        </div>
+        <div class="col-12">
+            <canvas id="chartKhachHang" style="width:100%;height:200px;"></canvas>
+        </div>
+        <div class="col-12">
+            <canvas id="chartTourDangChay" style="width:100%;height:200px;"></canvas>
+        </div>
+    </div>
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
+    // A $( document ).ready() block.
+    $(document).ready(function () {
+        console.log("Home page running!!!")
+        let input_listVeTour = document.getElementById("input_listVeTour")
+        let input_listTour = document.getElementById("input_listTour")
+        let input_listTourDangChay = document.getElementById("input_listTourDangChay")
+        let input_listNhanVien = document.getElementById("input_listNhanVien")
+        let input_listKhachHang = document.getElementById("input_listKhachHang")
+        let input_listHuongDanVien = document.getElementById("input_listHuongDanVien")
+
+        let listVeTour = JSON.parse(input_listVeTour.value);
+        let listTour = JSON.parse(input_listTour.value);
+        let listTourDangChay = JSON.parse(input_listTourDangChay.value);
+        let listNhanVien = JSON.parse(input_listNhanVien.value);
+        let listKhachHang = JSON.parse(input_listKhachHang.value);
+        let listHuongDanVien = JSON.parse(input_listHuongDanVien.value);
+
+        console.log(input_listVeTour.value);
+        console.log(input_listTour.value);
+        console.log(input_listTourDangChay.value);
+        console.log(input_listNhanVien.value);
+        console.log(input_listKhachHang.value);
+        console.log(input_listHuongDanVien.value);
+
+        // Xây dựng biểu đồ dựa trên dữ liệu json đã lấy được về và chuyển sang dạng object javascript
+        // Data processing for VeTour chart
+        let veTourLabels = listVeTour.map(x => new Date(x.NgayDatTour).toLocaleDateString());
+        let veTourData = listVeTour.map(x => x.SoLuongKhach);
+
+        var ctxVeTour = document.getElementById('chartVeTour').getContext('2d');
+        new Chart(ctxVeTour, {
+            type: 'bar',
+            data: {
+                labels: veTourLabels,
+                datasets: [{
+                    label: 'Số lượng khách',
+                    data: veTourData,
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, // Cho phép biểu đồ phản ứng
+                maintainAspectRatio: true, // Giữ tỷ lệ khung nhìn
+                scales: { y: { beginAtZero: true } }
             }
-        }
+        });
+
+        // Data processing for Tour Revenue chart
+        let tourLabels = listTour.map(x => x.TenTour);
+        let tourData = listTour.map(x => x.GiaTourBanLe);
+
+        var ctxDoanhThu = document.getElementById('chartDoanhThu').getContext('2d');
+        new Chart(ctxDoanhThu, {
+            type: 'line',
+            data: {
+                labels: tourLabels,
+                datasets: [{
+                    label: 'Doanh thu',
+                    data: tourData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, // Cho phép biểu đồ phản ứng
+                maintainAspectRatio: true, // Giữ tỷ lệ khung nhìn
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Data processing for KhachHang chart
+        let khachHangLabels = listKhachHang.map(x => x.TenKhachHang);
+        let khachHangData = listKhachHang.map(x => x.Tuoi);
+
+        var ctxKhachHang = document.getElementById('chartKhachHang').getContext('2d');
+        new Chart(ctxKhachHang, {
+            type: 'pie',
+            data: {
+                labels: khachHangLabels,
+                datasets: [{
+                    label: 'Tuổi của khách hàng',
+                    data: khachHangData,
+                    backgroundColor: [
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(199, 199, 199, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(199, 199, 199, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, // Cho phép biểu đồ phản ứng
+                maintainAspectRatio: true, // Giữ tỷ lệ khung nhìn
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Data processing for Tour Dang Chay chart
+        let tourDangChayLabels = listTourDangChay.map(x => new Date(x.NgayBatDau).toLocaleDateString());
+        let tourDangChayData = listTourDangChay.map(x => x.TourID);
+
+        var ctxTourDangChay = document.getElementById('chartTourDangChay').getContext('2d');
+        new Chart(ctxTourDangChay, {
+            type: 'bar',
+            data: {
+                labels: tourDangChayLabels,
+                datasets: [{
+                    label: 'Số Tour Đang Chạy',
+                    data: tourDangChayData,
+                    backgroundColor: 'rgba(153, 102, 255, 0.5)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, // Cho phép biểu đồ phản ứng
+                maintainAspectRatio: true, // Giữ tỷ lệ khung nhìn
+                scales: { y: { beginAtZero: true } }
+            }
+        });
     });
 </script>
+
+@code {
+    public List<Tour> listTour;
+    public List<TourDangChay> listTourDangChay;
+    public List<VeTour> listVeTour;
+    public List<NhanVien> listNhanVien;
+    public List<KhachHang> listKhachHang;
+    public List<HuongDanVien> ListHuongDanVien;
+    // Các biến để chứa chuỗi JSON
+    public string listVeTourJson;
+    public string listTourJson;
+    public string listTourDangChayJson;
+    public string listNhanVienJson;
+    public string listKhachHangJson;
+    public string listHuongDanVienJson;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Giả sử đã lấy dữ liệu từ các DAO
+        listVeTour = VeTourDAO.List();
+        listTour = TourDAO.List();
+        listTourDangChay = TourDangChayDAO.List();
+        listNhanVien = NhanVienDAO.List();
+        listKhachHang = KhachHangDAO.List();
+        ListHuongDanVien = HuongDanVienDAO.List();
+
+        // Gán dữ liệu vào các biến chuỗi JSON
+        listVeTourJson = JsonSerializer.Serialize(listVeTour);
+        listTourJson = JsonSerializer.Serialize(listTour);
+        listTourDangChayJson = JsonSerializer.Serialize(listTourDangChay);
+        listNhanVienJson = JsonSerializer.Serialize(listNhanVien);
+        listKhachHangJson = JsonSerializer.Serialize(listKhachHang);
+        listHuongDanVienJson = JsonSerializer.Serialize(ListHuongDanVien);
+    }
+
+}
+
+
+

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj": {}
+    "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj": {}
   },
   "projects": {
-    "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj": {
+    "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj",
+        "projectUniqueName": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj",
         "projectName": "TourManagementMAUI",
-        "projectPath": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\",
+        "projectPath": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\TourManagementMAUI.csproj",
+        "packagesPath": "C:\\Users\\lanta\\.nuget\\packages\\",
+        "outputPath": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\App\\VS\\SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lanta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -56,6 +56,10 @@
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.2, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -63,6 +67,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -79,7 +87,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )",
+              "version": "[8.0.4, )",
               "autoReferenced": true
             },
             "System.Data.SqlClient": {
@@ -107,11 +115,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.2, )"
+            },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -119,6 +131,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -162,7 +178,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

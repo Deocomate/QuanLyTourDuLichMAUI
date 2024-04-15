@@ -1,31 +1,35 @@
 {
   "Files": [
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TourManagementMAUI.styles.css",
       "PackagePath": "staticwebassets\\TourManagementMAUI.styles.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\index.html",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\QuanLyTourDuLich\\TourManagementMAUI\\TourManagementMAUI\\wwwroot\\js\\main.js",
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {

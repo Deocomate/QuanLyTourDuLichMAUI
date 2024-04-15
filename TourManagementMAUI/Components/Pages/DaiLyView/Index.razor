@@ -1,4 +1,7 @@
-﻿@page "/daily/index"
+﻿<!-- DaiLyView/Index.razor -->
+@page "/daily/index"
+@using TourManagementMAUI.Services
+
 @inject NavigationManager navigationManager
 <div class="row mb-3">
     <div class="col-12">
@@ -6,10 +9,19 @@
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <h3 class="card-title mb-0">Danh sách đại lý</h3>
-                    <button @onclick="Create" class="btn btn-success">Thêm đại lý mới</button>
+                    <div>
+                        <button @onclick="Create" class="btn btn-success">Thêm đại lý mới</button>
+                        <button @onclick="ExportToExcel" class="btn btn-info">Xuất file Excel</button>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
+                @if (!message.Equals(""))
+                {
+                    <div class="alert alert-primary" role="alert">
+                        @message
+                    </div>
+                }
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -31,8 +43,8 @@
                                 <td>@item.SoDienThoai</td>
                                 <td>@item.Email</td>
                                 <td>@item.DiaChi</td>
-                                <td><button class="btn btn-warning" @onclick=@(()=>Edit(item.DaiLyID))>Sửa</button></td>
-                                <td><button class="btn btn-danger" @onclick=@(()=>Delete(item.DaiLyID))>Xóa</button></td>
+                                <td><button class="btn btn-warning" @onclick=@(() => Edit(item.DaiLyID))>Sửa</button></td>
+                                <td><button class="btn btn-danger" @onclick=@(() => Delete(item.DaiLyID))>Xóa</button></td>
                             </tr>
                         }
                     </tbody>
@@ -43,6 +55,7 @@
 </div>
 @code {
     public List<DaiLy> list;
+    private string message = "";  // Biến lưu thông báo
     protected override async Task OnInitializedAsync()
     {
         list = DaiLyDAO.List();
@@ -61,5 +74,13 @@
     {
         DaiLyDAO.Delete(id);
         OnInitializedAsync();
+    }
+
+    private void ExportToExcel()
+    {
+        // Xuất file Excel
+        DaiLyExcel excelService = new DaiLyExcel();
+        excelService.ExportToExcel(list);
+        message = "Xuất file Excel thành công!";
     }
 }

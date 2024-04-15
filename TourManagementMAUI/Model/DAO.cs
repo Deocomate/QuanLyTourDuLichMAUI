@@ -8,6 +8,6 @@ namespace TourManagementMAUI.Model
 {
     internal class DAO
     {
-        public static string connetionString = $"Server=LAPTOP-S1HOK15A;Database=dtb_quanlytourdulich;Trusted_Connection=True;TrustServerCertificate=true;";
+        public static string connetionString = $"Server=Lou;Database=dtb_quanlytourdulich;Trusted_Connection=True;TrustServerCertificate=true;";
     }
 }

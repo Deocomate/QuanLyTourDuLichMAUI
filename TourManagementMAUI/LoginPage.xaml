@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TourManagementMAUI.LoginPage"
+             Title=""
+             BackgroundColor="#C8E6C9"
+             Width="500"
+             Height="500"
+             >
+
+    <VerticalStackLayout
+        Spacing="10"
+        Padding="20,50,20,50"
+        VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand">
+
+        <Entry
+            x:Name="usernameEntry"
+            Placeholder="username"
+            FontSize="16"
+            Margin="0,10,0,0"
+            VerticalOptions="Start"
+            BackgroundColor="White"
+            TextColor="Black" />
+
+        <Entry
+            x:Name="passwordEntry"
+            Placeholder="password"
+            IsPassword="True"
+            FontSize="16"
+            VerticalOptions="Start"
+            BackgroundColor="White"
+            TextColor="Black" />
+
+        <Button
+            x:Name="loginButton"
+            Text="LOGIN"
+            FontSize="16"
+            BackgroundColor="#4CAF50"
+            TextColor="White"
+            Margin="0,20,0,0"
+            CornerRadius="0"
+            HeightRequest="50"
+            Clicked="OnLoginClicked"
+            HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
