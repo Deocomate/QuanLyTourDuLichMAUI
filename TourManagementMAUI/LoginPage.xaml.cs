@@ -1,4 +1,6 @@
-﻿namespace TourManagementMAUI;
+﻿using TourManagementMAUI.Model;
+
+namespace TourManagementMAUI;
 
 public partial class LoginPage : ContentPage
 {
@@ -26,6 +28,7 @@ public partial class LoginPage : ContentPage
 
     private Task<bool> AuthenticateUser(string username, string password)
     {
+        List<Admin_> admins = Admin_DAO.List();
         return Task.FromResult(username == "admin" && password == "999999999");
     }
 }
