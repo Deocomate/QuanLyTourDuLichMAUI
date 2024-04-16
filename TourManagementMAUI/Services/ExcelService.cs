@@ -11,6 +11,5 @@ namespace TourManagementMAUI.Services
     internal class ExcelService
     {
         public string userDownloadsFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-        public string fileName = "DanhSachDaiLy_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".xlsx";
     }
 }

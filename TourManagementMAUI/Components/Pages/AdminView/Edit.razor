@@ -47,12 +47,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        item = Admin_DAO.Find(id); // Đảm bảo AdminDAO có phương thức Find
+        item = Admin_DAO.Find(id); 
     }
 
     public void Update()
     {
-        Admin_DAO.Update(id, item); // Đảm bảo AdminDAO có phương thức Update
+        Admin_DAO.Update(id, item); 
         NavigationManager.NavigateTo("/admin/index");
     }
 }

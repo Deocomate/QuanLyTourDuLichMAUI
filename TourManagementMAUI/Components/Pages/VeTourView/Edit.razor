@@ -73,12 +73,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        item = VeTourDAO.Find(id); // Đảm bảo VeTourDAO có phương thức Find
+        item = VeTourDAO.Find(id); 
     }
 
     public void Update()
     {
-        VeTourDAO.Update(id, item); // Đảm bảo VeTourDAO có phương thức Update
+        VeTourDAO.Update(id, item); 
         NavigationManager.NavigateTo("/vetour/index");
     }
 }

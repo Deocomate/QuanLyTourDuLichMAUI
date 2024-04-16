@@ -66,12 +66,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        item = TourDAO.Find(id); // Đảm bảo TourDAO có phương thức Find
+        item = TourDAO.Find(id); 
     }
 
     public void Update()
     {
-        TourDAO.Update(id, item); // Đảm bảo TourDAO có phương thức Update
+        TourDAO.Update(id, item); 
         NavigationManager.NavigateTo("/tour/index");
     }
 }

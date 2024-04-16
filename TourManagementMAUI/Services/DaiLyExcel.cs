@@ -12,7 +12,9 @@ namespace TourManagementMAUI.Services
     {
         public void ExportToExcel(List<DaiLy> daiLies)
         {
+            string fileName = "DanhSachDaiLy_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".xlsx";
             string filePath = Path.Combine(userDownloadsFolder, fileName);
+
             using (var workbook = new XLWorkbook())
             {
                 var worksheet = workbook.Worksheets.Add("DaiLies");

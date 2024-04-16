@@ -48,7 +48,7 @@
     public List<TourDangChay> list;
     protected override async Task OnInitializedAsync()
     {
-        list = TourDangChayDAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong TourDangChayDAO
+        list = TourDangChayDAO.List(); 
     }
 
     public void Create()
@@ -62,8 +62,6 @@
     public void Delete(int id)
     {
         TourDangChayDAO.Delete(id);
-        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
-        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
         OnInitializedAsync();
     }
 }

@@ -56,12 +56,11 @@
 
     protected override async Task OnInitializedAsync()
     {
-        item = TourDangChayDAO.Find(id); // Đảm bảo TourDangChayDAO có phương thức Find
-    }
+        item = TourDangChayDAO.Find(id); 
 
     public void Update()
     {
-        TourDangChayDAO.Update(id, item); // Đảm bảo TourDangChayDAO có phương thức Update
+        TourDangChayDAO.Update(id, item); 
         NavigationManager.NavigateTo("/tourdangchay/index");
     }
 }

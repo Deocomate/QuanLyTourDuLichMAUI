@@ -28,7 +28,15 @@ public partial class LoginPage : ContentPage
 
     private Task<bool> AuthenticateUser(string username, string password)
     {
+        Admin_ adm = new Admin_();
         List<Admin_> admins = Admin_DAO.List();
-        return Task.FromResult(username == "admin" && password == "999999999");
+        foreach (var item in admins)
+        {
+            if (username.Equals(item.TenDangNhap) && password.Equals(item.MatKhau))
+            {
+                return Task.FromResult(true);
+            }
+        }
+        return Task.FromResult(false);
     }
 }

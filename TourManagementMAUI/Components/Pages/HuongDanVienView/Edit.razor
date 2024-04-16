@@ -58,12 +58,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        item = HuongDanVienDAO.Find(id); // Đảm bảo HuongDanVienDAO có phương thức Find
+        item = HuongDanVienDAO.Find(id);
     }
 
     public void Update()
     {
-        HuongDanVienDAO.Update(id, item); // Đảm bảo HuongDanVienDAO có phương thức Update
+        HuongDanVienDAO.Update(id, item);
         NavigationManager.NavigateTo("/huongdanvien/index");
     }
 }

@@ -3,12 +3,120 @@
   "WorkspaceRootPath": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\vetourview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\vetourview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\vetourview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\vetourview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\vetourview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\vetourview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourdangchayview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourdangchayview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourdangchayview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourdangchayview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\tourdangchayview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\tourdangchayview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\nhanvienview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\nhanvienview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\nhanvienview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\nhanvienview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\khachhangview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\khachhangview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\khachhangview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\khachhangview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\khachhangview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\khachhangview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\huongdanvienview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\huongdanvienview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\huongdanvienview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\huongdanvienview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\huongdanvienview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\huongdanvienview\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\danhsachkhachview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\danhsachkhachview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\danhsachkhachview\\addkhachhang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\danhsachkhachview\\addkhachhang.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\dailyview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\dailyview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\dailyview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\dailyview\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\components\\pages\\adminview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\components\\pages\\adminview\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\model\\admindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\model\\admindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\model\\admin_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\model\\admin_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\tourmanagementmaui\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\services\\dailyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\services\\dailyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\services\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\services\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|e:\\hau\\quanlytourdulichmaui\\quanlytourdulichmaui\\tourmanagementmaui\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|solutionrelative:tourmanagementmaui\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37AB4210-3E85-4B20-99F1-18E97C5ABEB6}|TourManagementMAUI\\TourManagementMAUI.csproj|E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\tourmanagementmaui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +134,362 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\Home.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:53.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Index.razor",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:43.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Edit.razor",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:33.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Create.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Create.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Create.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\VeTourView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\VeTourView\\Create.razor",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:30.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourView\\Index.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:19.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourView\\Edit.razor",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:10.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Create.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourView\\Create.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourView\\Create.razor",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:08:07.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Index.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:55.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Create.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Create.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Create.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:52.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\TourDangChayView\\Edit.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:42.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\NhanVienView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\NhanVienView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\NhanVienView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\NhanVienView\\Index.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:37.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\NhanVienView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\NhanVienView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\NhanVienView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\NhanVienView\\Edit.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:34.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Index.razor",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:27.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Edit.razor",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:25.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Create.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Create.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\KhachHangView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\KhachHangView\\Create.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:22.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Index.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:18.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Edit.razor",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:07.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Create.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Create.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Create.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\HuongDanVienView\\Create.razor",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:07:04.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\Index.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:06:56.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddKhachHang.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\AddKhachHang.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\AddKhachHang.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\AddKhachHang.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DanhSachKhachView\\AddKhachHang.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:06:53.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\AdminView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\AdminView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\AdminView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\AdminView\\Index.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T03:02:54.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminDAO.cs",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Model\\AdminDAO.cs",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Model\\AdminDAO.cs",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Model\\AdminDAO.cs",
+              "RelativeToolTip": "TourManagementMAUI\\Model\\AdminDAO.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:02:43.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Admin_.cs",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Model\\Admin_.cs",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Model\\Admin_.cs",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Model\\Admin_.cs",
+              "RelativeToolTip": "TourManagementMAUI\\Model\\Admin_.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T03:02:42.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Index.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Index.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Index.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Index.razor",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T02:51:07.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Edit.razor",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Edit.razor",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Components\\Pages\\DaiLyView\\Edit.razor",
+              "RelativeToolTip": "TourManagementMAUI\\Components\\Pages\\DaiLyView\\Edit.razor",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T02:51:06.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DaiLyExcel.cs",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Services\\DaiLyExcel.cs",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Services\\DaiLyExcel.cs",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Services\\DaiLyExcel.cs",
+              "RelativeToolTip": "TourManagementMAUI\\Services\\DaiLyExcel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:47:55.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ExcelService.cs",
+              "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Services\\ExcelService.cs",
+              "RelativeDocumentMoniker": "TourManagementMAUI\\Services\\ExcelService.cs",
+              "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\Services\\ExcelService.cs",
+              "RelativeToolTip": "TourManagementMAUI\\Services\\ExcelService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T02:47:14.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "TourManagementMAUI\\MainPage.xaml.cs",
@@ -38,36 +497,38 @@
               "RelativeToolTip": "TourManagementMAUI\\MainPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T04:39:11.667Z"
+              "WhenOpened": "2024-04-15T04:39:11.667Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 28,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "TourManagementMAUI\\LoginPage.xaml.cs",
               "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\LoginPage.xaml.cs",
               "RelativeToolTip": "TourManagementMAUI\\LoginPage.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAkwBwAAAA5AAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwCcAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T04:40:40.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\LoginPage.xaml",
               "RelativeDocumentMoniker": "TourManagementMAUI\\LoginPage.xaml",
               "ToolTip": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\LoginPage.xaml",
               "RelativeToolTip": "TourManagementMAUI\\LoginPage.xaml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAANAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-15T04:40:36.891Z"
+              "WhenOpened": "2024-04-15T04:40:36.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 29,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "E:\\HAU\\QuanlytourdulichMAUI\\QuanLyTourDuLichMAUI\\TourManagementMAUI\\App.xaml.cs",
               "RelativeDocumentMoniker": "TourManagementMAUI\\App.xaml.cs",
@@ -75,7 +536,8 @@
               "RelativeToolTip": "TourManagementMAUI\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T04:34:39.034Z"
+              "WhenOpened": "2024-04-15T04:34:39.034Z",
+              "EditorCaption": ""
             }
           ]
         }

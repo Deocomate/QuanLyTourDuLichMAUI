@@ -52,7 +52,7 @@
     public List<Tour> list;
     protected override async Task OnInitializedAsync()
     {
-        list = TourDAO.List(); // Đảm bảo rằng bạn đã tạo phương thức List() trong TourDAO
+        list = TourDAO.List();
     }
 
     public void Create()
@@ -66,8 +66,6 @@
     public void Delete(int id)
     {
         TourDAO.Delete(id);
-        // Gợi ý: Nên gọi lại OnInitializedAsync() để cập nhật danh sách sau khi xóa thay vì sử dụng NavigationManager.Refresh()
-        // Lý do là NavigationManager.Refresh() có thể không luôn làm mới trang trong một số trường hợp.
         OnInitializedAsync();
     }
 }
